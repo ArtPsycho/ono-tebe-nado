@@ -33,8 +33,10 @@ img {
   width: 100%;
 }
 
-/*не уверен на счет правильности сбрасывания класса address*/
-
 address {
   margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
 } 
