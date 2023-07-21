@@ -6,10 +6,10 @@ body {
 .header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  width: 1340px;
+  max-width: 1340px;
   height: 100%;
   margin: 92px 50px;
-  min-height: 109px;
+  padding: 2px 0;
   font-size: 18px;
   font-weight: 400;
 }
@@ -73,6 +73,11 @@ body {
 
 .address-link {
   text-decoration: underline 1px solid #000;
+}
+
+.address-link:hover {
+  color: #7A7A7A;
+  text-decoration: none;
 }
 
 .cover {
@@ -166,6 +171,11 @@ body {
   cursor: pointer;
 }
 
+.bet-button:hover {
+  color: #F61DE1;
+  border-color: #F61DE1;
+}
+
 .lots {
   margin: 180px 50px 0;
   display: flex;
@@ -191,7 +201,6 @@ body {
   position: relative;
   width: 430px;
   min-height: 450px;
-  background-color: beige;
   list-style: none;
   z-index: 0;
 }
@@ -262,11 +271,16 @@ body {
   text-underline-offset: 5px;
 }
 
+.lots__look-more-link:hover {
+  color: #7A7A7A;
+  text-decoration: none;
+}
+
 .about {
   display: grid;
-  grid-template-columns: repeat(3, 430px);
+  grid-template-columns: repeat(3, 1fr);
   gap: 25px;
-  min-height: 488px;
+  max-width: 1340px;
   margin: 180px 50px 0;
 }
 
@@ -322,8 +336,8 @@ body {
   margin: 180px 50px 90px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  width: 1340px;
-  min-height: 97px;
+  max-width: 1340px;
+  padding: 2px 0;
   font-size: 18px;
   font-weight: 400;
 }
@@ -379,4 +393,8 @@ body {
 .footer__social-icon {
   width: 48px;
   height: 48px;
+}
+
+.footer__social-icon:hover {
+  opacity: 0.5;
 }
